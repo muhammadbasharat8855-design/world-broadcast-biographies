@@ -1,0 +1,14 @@
+WORLD BROADCAST BIOGRAPHIES — SETUP (Roman Urdu)
+
+Yeh package code aur setup files hain. Abhi aapke accounts mein deploy nahi hua.
+
+1. Supabase par free account/project banayein: https://supabase.com/dashboard
+2. Authentication > Users mein apna admin user create karein. User ka UUID copy karein.
+3. SQL Editor mein supabase-schema.sql paste karein. Har ADMIN_UUID ko apne user UUID se replace karein, phir Run karein.
+4. Project Settings > API se Project URL aur anon/public key lein. config.js mein placeholders replace karein. Service role/secret key kabhi browser file mein na daalein.
+5. GitHub repo world-broadcast-biographies mein index.html, admin.html, style.css, config.js aur js folder upload/commit karein. SQL aur yeh guide setup ke liye hain.
+6. Cloudflare par Workers & Pages > Create application > Pages > Connect to Git choose karein. Existing repo select karein. Framework preset None, Build command blank, Build output directory "/" (ya "." agar root folder ka field maange) rakhein. Static Pages deployment use karein; Workers deploy command npx wrangler is Pages setup ke liye nahi.
+7. Deploy ke baad /admin.html kholein aur Supabase admin email/password se sign in karein.
+
+Security: passwords, OTP, GitHub tokens, Supabase service_role key kabhi chat mein share na karein. Sirf public anon key config.js mein, RLS policies ke saath. Public bios ke facts verify karein; photos sirf permission/rights ke saath upload karein.
+LinkedIn personal posts ka automatic sync is package mein included nahi; LinkedIn API permissions ke baghair guarantee nahi.
