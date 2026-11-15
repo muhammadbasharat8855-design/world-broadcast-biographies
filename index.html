@@ -1,79 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="World Broadcast Biographies documents the stories, careers and achievements of broadcasting professionals around the world.">
-<title>World Broadcast Biographies | The People Behind Every Broadcast</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the people behind every broadcast: broadcasters, journalists, presenters and live production professionals from around the world.">
+  <title>World Broadcast Biographies | The People Behind Every Broadcast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="#home" aria-label="World Broadcast Biographies home">
-    <span class="brand-mark">W<span>B</span></span>
-    <span class="brand-name">WORLD BROADCAST<br><b>BIOGRAPHIES</b></span>
-  </a>
-  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-  <nav id="nav">
-    <a href="#home">Home</a><a href="#stories">Stories</a><a href="#categories">Categories</a>
-    <a href="#about">About</a><a class="nav-cta" href="#submit">Submit a Story</a>
-  </nav>
-</header>
+  <div class="topline"><span class="live-dot"></span> AN INTERNATIONAL ARCHIVE OF BROADCASTING PEOPLE</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="World Broadcast Biographies home">
+      <span class="brand-mark">WB<span>.</span></span>
+      <span class="brand-name">WORLD BROADCAST<br><b>BIOGRAPHIES</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#discover">Discover</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#contribute">Share a Story <span>↗</span></a>
+    </nav>
+  </header>
 
-<main>
-<section class="hero" id="home">
-  <div class="hero-copy">
-    <p class="eyebrow">A GLOBAL BROADCASTING ARCHIVE</p>
-    <h1>The people<br>behind every <em>broadcast.</em></h1>
-    <p class="hero-lead">Discover the lives, careers and achievements of the professionals who bring stories to the world.</p>
-    <div class="hero-actions"><a class="button primary" href="#stories">Explore stories</a><a class="button secondary" href="#submit">Share a biography</a></div>
-    <p class="hero-note">TV · Radio · Sports · Live Production · Audio · Camera · Direction</p>
-  </div>
-  <div class="hero-art" aria-label="Broadcast microphone and signal illustration">
-    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-    <div class="signal">)))</div><div class="mic">🎙</div>
-    <div class="art-caption">ONE INDUSTRY<br><b>COUNTLESS STORIES</b></div>
-  </div>
-</section>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> THE PEOPLE BEHIND EVERY BROADCAST</p>
+        <h1>Every broadcast has a story.<br><em>Meet the people</em> behind it.</h1>
+        <p class="hero-intro">An independent global directory celebrating the careers, craft and achievements of the people who bring news, sport and live events to audiences everywhere.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#discover">Explore the directory <span>→</span></a>
+          <a class="text-link" href="#about">Our mission <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✦</span> From the studio floor to the world stage.</div>
+      </div>
+      <div class="hero-art" aria-label="Abstract broadcast signal artwork">
+        <div class="art-grid"></div>
+        <div class="signal signal-one"></div><div class="signal signal-two"></div><div class="signal signal-three"></div>
+        <div class="art-center"><span class="art-live"><i></i> ON AIR</span><strong>WB<span>.</span></strong><small>GLOBAL STORIES<br>OF BROADCASTING</small></div>
+        <div class="art-caption">PEOPLE · PASSION · PRODUCTION</div>
+      </div>
+    </section>
 
-<section class="intro section">
-  <p class="eyebrow">OUR PURPOSE</p>
-  <h2>Every great broadcast has a story behind it.</h2>
-  <p>From presenters and reporters to camera operators, audio engineers, producers and technical crews, this archive celebrates the people whose work makes broadcasting possible.</p>
-</section>
+    <section class="ticker" aria-label="Areas of broadcasting">
+      <span>TELEVISION</span><b>✳</b><span>RADIO</span><b>✳</b><span>LIVE SPORT</span><b>✳</b><span>NEWS</span><b>✳</b><span>PRODUCTION</span><b>✳</b><span>TECHNOLOGY</span>
+    </section>
 
-<section class="section stories" id="stories">
-  <div class="section-heading"><div><p class="eyebrow">FEATURED DIRECTORY</p><h2>Explore the world of broadcasting</h2></div><span class="small-label">PROFILES & CAREER STORIES</span></div>
-  <div class="story-grid">
-    <article class="story-card featured"><div class="card-icon">🎤</div><p class="card-kicker">ON-AIR TALENT</p><h3>Presenters & Broadcasters</h3><p>Meet the voices and faces connecting audiences with the world.</p><a href="#categories">Explore category →</a></article>
-    <article class="story-card"><div class="card-icon">🏟️</div><p class="card-kicker">SPORTS & EVENTS</p><h3>Sports Broadcasting</h3><p>The people delivering the excitement of live sport.</p><a href="#categories">Explore category →</a></article>
-    <article class="story-card"><div class="card-icon">🎚️</div><p class="card-kicker">BEHIND THE SCENES</p><h3>Audio & Engineering</h3><p>Engineers and specialists shaping the sound of every production.</p><a href="#categories">Explore category →</a></article>
-    <article class="story-card"><div class="card-icon">🎥</div><p class="card-kicker">PRODUCTION CREW</p><h3>Camera & Live Production</h3><p>Operators, directors and crews making live moments happen.</p><a href="#categories">Explore category →</a></article>
-  </div>
-</section>
+    <section class="section discover" id="discover">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPLORE THE ARCHIVE</p><h2>Discover broadcasting talent</h2></div>
+        <p>Stories from in front of the camera, behind the microphone and across the production floor.</p>
+      </div>
+      <div class="search-wrap">
+        <span>⌕</span><input id="searchInput" type="search" placeholder="Search roles, skills or departments..." aria-label="Search categories">
+        <span class="search-hint">DIRECTORY</span>
+      </div>
+      <div class="category-grid" id="categoryGrid">
+        <a class="category-card" href="#contribute" data-search="presenters anchors hosts television radio"><span class="category-number">01 / ON AIR</span><span class="category-icon">◉</span><h3>Presenters & Anchors</h3><p>News anchors, hosts, radio presenters and broadcasters.</p><span class="card-arrow">↗</span></a>
+        <a class="category-card" href="#contribute" data-search="sports commentators sport broadcast"><span class="category-number">02 / SPORT</span><span class="category-icon">◎</span><h3>Sports Broadcasters</h3><p>Commentators, reporters and sports presentation teams.</p><span class="card-arrow">↗</span></a>
+        <a class="category-card" href="#contribute" data-search="journalists reporters news"><span class="category-number">03 / NEWS</span><span class="category-icon">▤</span><h3>Journalists & Reporters</h3><p>Field reporters, correspondents and news storytellers.</p><span class="card-arrow">↗</span></a>
+        <a class="category-card" href="#contribute" data-search="camera operators cinematographers video"><span class="category-number">04 / CAMERA</span><span class="category-icon">▣</span><h3>Camera Professionals</h3><p>Camera operators, cinematographers and camera assistants.</p><span class="card-arrow">↗</span></a>
+        <a class="category-card" href="#contribute" data-search="audio sound engineers boom operators"><span class="category-number">05 / AUDIO</span><span class="category-icon">≋</span><h3>Audio Professionals</h3><p>Sound engineers, A1s, A2s and boom operators.</p><span class="card-arrow">↗</span></a>
+        <a class="category-card" href="#contribute" data-search="producers directors vision mixers production"><span class="category-number">06 / PRODUCTION</span><span class="category-icon">▧</span><h3>Production Teams</h3><p>Producers, directors, vision mixers and crew chiefs.</p><span class="card-arrow">↗</span></a>
+        <a class="category-card" href="#contribute" data-search="broadcast engineers technicians technology"><span class="category-number">07 / TECHNOLOGY</span><span class="category-icon">⌘</span><h3>Broadcast Technology</h3><p>Engineers, technicians and broadcast systems specialists.</p><span class="card-arrow">↗</span></a>
+        <a class="category-card" href="#contribute" data-search="live events stage crew outside broadcast"><span class="category-number">08 / LIVE EVENTS</span><span class="category-icon">✳</span><h3>Live Event Crew</h3><p>OB teams and the specialists powering live experiences.</p><span class="card-arrow">↗</span></a>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No matching categories. Try another search.</p>
+    </section>
 
-<section class="category-band section" id="categories">
-  <p class="eyebrow">THE INDUSTRY, IN ALL ITS FORMS</p><h2>Explore by profession</h2>
-  <div class="category-list">
-    <span>TV Presenters</span><span>Radio Broadcasters</span><span>Sports Commentators</span>
-    <span>Journalists & Reporters</span><span>Producers & Directors</span><span>Camera Operators</span>
-    <span>Audio Engineers</span><span>Vision Mixers</span><span>Boom Operators</span><span>Broadcast Technicians</span>
-  </div>
-</section>
+    <section class="quote-band">
+      <span class="quote-mark">“</span>
+      <p>Behind every moment seen or heard by millions, there is a team whose work deserves to be remembered.</p>
+      <span class="quote-label">THE WORLD BROADCAST BIOGRAPHIES MISSION</span>
+    </section>
 
-<section class="about section" id="about">
-  <div><p class="eyebrow">ABOUT THE ARCHIVE</p><h2>Recognising the people who make broadcasting possible.</h2></div>
-  <div><p>World Broadcast Biographies is an independent, international directory dedicated to documenting professional journeys and contributions across television, radio, sports and live production.</p><p>Our goal is to preserve accurate, respectful and well-sourced stories for students, industry colleagues and future generations.</p></div>
-</section>
+    <section class="section about-section" id="about">
+      <div class="about-visual"><div class="about-big">WB<span>.</span></div><div class="about-stamp">GLOBAL<br>BY NATURE<br><b>✳</b></div></div>
+      <div class="about-copy"><p class="eyebrow">WHY THIS ARCHIVE EXISTS</p><h2>Broadcasting is a team effort. Every career matters.</h2><p>World Broadcast Biographies is an independent project documenting the people and professional journeys that shape broadcasting around the world. We aim to recognise experience, share knowledge and preserve stories across generations.</p><p class="small-note">This is an independent archive and is not affiliated with any broadcaster, network or media organisation.</p><a class="text-link" href="#contribute">Help grow the archive <span>→</span></a></div>
+    </section>
 
-<section class="submit section" id="submit">
-  <p class="eyebrow">HELP US GROW THE ARCHIVE</p><h2>Have a story to share?</h2>
-  <p>Know a broadcasting professional whose journey deserves to be documented? Send us their public professional profile and reliable sources.</p>
-  <a class="button primary" href="mailto:YOUR-EMAIL@example.com?subject=Biography%20submission">Submit a biography</a>
-  <p class="fine-print">Before publishing, obtain permission where needed and verify names, dates, claims and image rights. Replace the placeholder email address with your own.</p>
-</section>
-</main>
+    <section class="contribute" id="contribute">
+      <div><p class="eyebrow">BE PART OF THE ARCHIVE</p><h2>Know a story worth sharing?</h2><p>Suggest a broadcaster or production professional, or share your own career story. Profiles will be reviewed before publication.</p></div>
+      <a class="button button-light" href="mailto:YOUR-EMAIL@example.com?subject=World%20Broadcast%20Biographies%20-%20Story%20Submission">Suggest a biography <span>↗</span></a>
+    </section>
+  </main>
 
-<footer><a class="footer-brand" href="#home">WORLD BROADCAST BIOGRAPHIES</a><span>The people behind every broadcast.</span><span>© <span id="year"></span> World Broadcast Biographies</span></footer>
-<script src="script.js"></script>
-</body></html>
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">WB<span>.</span></span><span class="brand-name">WORLD BROADCAST<br><b>BIOGRAPHIES</b></span></a>
+    <p>The People Behind Every Broadcast</p>
+    <span class="copyright">© <span id="year"></span> World Broadcast Biographies. Independent archive.</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

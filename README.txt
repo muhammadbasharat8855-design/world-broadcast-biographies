@@ -1,23 +1,17 @@
-WORLD BROADCAST BIOGRAPHIES — starter website
+WORLD BROADCAST BIOGRAPHIES - WEBSITE FILES
 
 Files:
 - index.html: homepage content
-- style.css: responsive design
-- script.js: mobile navigation and current year
+- style.css: layout, colors and responsive design
+- script.js: mobile navigation and directory search
 
-Preview:
-Open index.html in a browser.
+PUBLISH / UPDATE ON GITHUB PAGES:
+1. Open your repository: world-broadcast-biographies
+2. Replace the existing index.html, style.css and script.js with these updated files.
+3. Commit the changes to the main branch.
+4. GitHub Pages should redeploy automatically (Settings > Pages should use main / root).
 
-Before publishing:
-1. Replace YOUR-EMAIL@example.com in index.html with your contact email.
-2. Check all text and add only verified biographies with reliable sources.
-3. Use photographs only when you have permission or a suitable licence.
-
-Free publishing option:
-GitHub Pages can host this static website for free:
-https://pages.github.com/
-Create a GitHub account, create a public repository, upload these three files
-(index.html, style.css, script.js), then enable Pages in repository Settings.
-Your site will receive a github.io web address.
-
-The site files are prepared, but the website is NOT yet published online.
+IMPORTANT:
+- Before publishing the contribution button, replace YOUR-EMAIL@example.com in index.html with an email address you want visitors to use.
+- The site is an independent archive, not officially affiliated with any broadcaster.
+- Add biographies only with accurate information and appropriate permission for photos.
