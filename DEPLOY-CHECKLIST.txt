@@ -1,0 +1,12 @@
+WORLD BROADCAST BIOGRAPHIES — LAUNCH CHECKLIST
+
+[ ] Run schema.sql in the existing Supabase project's SQL Editor
+[ ] Create public Storage bucket: biography-images
+[ ] Invite Muhammadbasharat8855@gmail.com in Supabase Authentication > Users
+[ ] Put Supabase Project URL and anon/publishable key in admin-config.js
+[ ] Upload admin.html, biographies.html, admin-config.js, assets/, functions/ to GitHub repo root
+[ ] Connect the same repository to Cloudflare Pages and deploy
+[ ] Add Cloudflare variables/secrets: SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY (SECRET), ADMIN_EMAIL
+[ ] Add Cloudflare /admin.html URL to Supabase Auth Redirect URLs
+[ ] Open /admin.html and test the email sign-in link
+[ ] Publish a test biography and check /biographies.html

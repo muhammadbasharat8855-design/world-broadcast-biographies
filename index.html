@@ -1,79 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="World Broadcast Biographies documents the stories, careers and achievements of broadcasting professionals around the world.">
-<title>World Broadcast Biographies | The People Behind Every Broadcast</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stories and career journeys of broadcasters from around the world.">
+  <title>Broadcast Biographies</title><link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="#home" aria-label="World Broadcast Biographies home">
-    <span class="brand-mark">W<span>B</span></span>
-    <span class="brand-name">WORLD BROADCAST<br><b>BIOGRAPHIES</b></span>
-  </a>
-  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-  <nav id="nav">
-    <a href="#home">Home</a><a href="#stories">Stories</a><a href="#categories">Categories</a>
-    <a href="#about">About</a><a class="nav-cta" href="#submit">Submit a Story</a>
-  </nav>
-</header>
-
+<header class="site-header"><a class="brand" href="./">BROADCAST <span>BIOGRAPHIES</span></a><a class="admin-link" href="admin.html">Admin</a></header>
 <main>
-<section class="hero" id="home">
-  <div class="hero-copy">
-    <p class="eyebrow">A GLOBAL BROADCASTING ARCHIVE</p>
-    <h1>The people<br>behind every <em>broadcast.</em></h1>
-    <p class="hero-lead">Discover the lives, careers and achievements of the professionals who bring stories to the world.</p>
-    <div class="hero-actions"><a class="button primary" href="#stories">Explore stories</a><a class="button secondary" href="#submit">Share a biography</a></div>
-    <p class="hero-note">TV · Radio · Sports · Live Production · Audio · Camera · Direction</p>
-  </div>
-  <div class="hero-art" aria-label="Broadcast microphone and signal illustration">
-    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-    <div class="signal">)))</div><div class="mic">🎙</div>
-    <div class="art-caption">ONE INDUSTRY<br><b>COUNTLESS STORIES</b></div>
-  </div>
-</section>
-
-<section class="intro section">
-  <p class="eyebrow">OUR PURPOSE</p>
-  <h2>Every great broadcast has a story behind it.</h2>
-  <p>From presenters and reporters to camera operators, audio engineers, producers and technical crews, this archive celebrates the people whose work makes broadcasting possible.</p>
-</section>
-
-<section class="section stories" id="stories">
-  <div class="section-heading"><div><p class="eyebrow">FEATURED DIRECTORY</p><h2>Explore the world of broadcasting</h2></div><span class="small-label">PROFILES & CAREER STORIES</span></div>
-  <div class="story-grid">
-    <article class="story-card featured"><div class="card-icon">🎤</div><p class="card-kicker">ON-AIR TALENT</p><h3>Presenters & Broadcasters</h3><p>Meet the voices and faces connecting audiences with the world.</p><a href="#categories">Explore category →</a></article>
-    <article class="story-card"><div class="card-icon">🏟️</div><p class="card-kicker">SPORTS & EVENTS</p><h3>Sports Broadcasting</h3><p>The people delivering the excitement of live sport.</p><a href="#categories">Explore category →</a></article>
-    <article class="story-card"><div class="card-icon">🎚️</div><p class="card-kicker">BEHIND THE SCENES</p><h3>Audio & Engineering</h3><p>Engineers and specialists shaping the sound of every production.</p><a href="#categories">Explore category →</a></article>
-    <article class="story-card"><div class="card-icon">🎥</div><p class="card-kicker">PRODUCTION CREW</p><h3>Camera & Live Production</h3><p>Operators, directors and crews making live moments happen.</p><a href="#categories">Explore category →</a></article>
-  </div>
-</section>
-
-<section class="category-band section" id="categories">
-  <p class="eyebrow">THE INDUSTRY, IN ALL ITS FORMS</p><h2>Explore by profession</h2>
-  <div class="category-list">
-    <span>TV Presenters</span><span>Radio Broadcasters</span><span>Sports Commentators</span>
-    <span>Journalists & Reporters</span><span>Producers & Directors</span><span>Camera Operators</span>
-    <span>Audio Engineers</span><span>Vision Mixers</span><span>Boom Operators</span><span>Broadcast Technicians</span>
-  </div>
-</section>
-
-<section class="about section" id="about">
-  <div><p class="eyebrow">ABOUT THE ARCHIVE</p><h2>Recognising the people who make broadcasting possible.</h2></div>
-  <div><p>World Broadcast Biographies is an independent, international directory dedicated to documenting professional journeys and contributions across television, radio, sports and live production.</p><p>Our goal is to preserve accurate, respectful and well-sourced stories for students, industry colleagues and future generations.</p></div>
-</section>
-
-<section class="submit section" id="submit">
-  <p class="eyebrow">HELP US GROW THE ARCHIVE</p><h2>Have a story to share?</h2>
-  <p>Know a broadcasting professional whose journey deserves to be documented? Send us their public professional profile and reliable sources.</p>
-  <a class="button primary" href="mailto:YOUR-EMAIL@example.com?subject=Biography%20submission">Submit a biography</a>
-  <p class="fine-print">Before publishing, obtain permission where needed and verify names, dates, claims and image rights. Replace the placeholder email address with your own.</p>
-</section>
+  <section class="hero"><p class="eyebrow">VOICES BEHIND THE STORIES</p><h1>Every broadcaster has a story.</h1><p>Discover the people, journeys and experiences behind broadcasting.</p>
+    <form id="searchForm" class="search"><input id="searchInput" type="search" placeholder="Search broadcasters..." aria-label="Search broadcasters"><button>Search</button></form>
+  </section>
+  <section class="content"><div class="section-heading"><div><p class="eyebrow">THE PEOPLE OF BROADCASTING</p><h2>Featured biographies</h2></div><span id="count" class="muted"></span></div>
+    <div id="status" class="notice">Loading biographies…</div><div id="stories" class="stories"></div>
+  </section>
 </main>
-
-<footer><a class="footer-brand" href="#home">WORLD BROADCAST BIOGRAPHIES</a><span>The people behind every broadcast.</span><span>© <span id="year"></span> World Broadcast Biographies</span></footer>
-<script src="script.js"></script>
+<footer>© <span id="year"></span> Broadcast Biographies · Stories deserve to be heard.</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="assets/config.js"></script><script src="assets/site.js"></script>
 </body></html>

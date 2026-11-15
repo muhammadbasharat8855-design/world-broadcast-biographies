@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Broadcaster Biographies | World Broadcast Biographies</title>
+  <link rel="stylesheet" href="assets/wbb.css">
+</head>
+<body>
+  <header class="top"><a href="index.html">WORLD BROADCAST BIOGRAPHIES</a><a href="index.html">HOME</a></header>
+  <main class="wrap">
+    <section class="intro"><p class="eyebrow">THE PEOPLE BEHIND EVERY BROADCAST</p><h1>Broadcaster biographies</h1><p class="muted">Discover the people, skills and stories behind broadcast and live production.</p></section>
+    <div id="stories" class="stories"><p>Loading biographies...</p></div>
+    <p class="foot">Independent archive. Information should be verified against the sources provided.</p>
+  </main>
+<script>
+(async () => {
+  const root = document.getElementById("stories");
+  try {
+    const response = await fetch("/api/biographies");
+    if (!response.ok) throw new Error("Could not load biographies.");
+    const items = await response.json();
+    root.innerHTML = "";
+    if (!items.length) { root.innerHTML = "<p>No biographies have been published yet. Please check back soon.</p>"; return; }
+    items.forEach(item => {
+      const card = document.createElement("article"); card.className = "story";
+      if (item.image_url) { const img = document.createElement("img"); img.src = item.image_url; img.alt = item.person_name; img.loading = "lazy"; card.append(img); }
+      const body = document.createElement("div");
+      const h = document.createElement("h2"); h.textContent = item.person_name;
+      const meta = document.createElement("p"); meta.className = "eyebrow"; meta.textContent = [item.role, item.country].filter(Boolean).join(" · ");
+      const title = document.createElement("h3"); title.textContent = item.title;
+      const bio = document.createElement("p"); bio.textContent = item.biography;
+      body.append(h, meta, title, bio);
+      if (item.linkedin_url) { const a = document.createElement("a"); a.href = item.linkedin_url; a.target = "_blank"; a.rel = "noopener noreferrer"; a.textContent = "LinkedIn / profile link"; body.append(a); }
+      if (item.sources) { const src = document.createElement("p"); src.className = "sources"; src.textContent = "Sources: " + item.sources; body.append(src); }
+      card.append(body); root.append(card);
+    });
+  } catch (e) { root.textContent = e.message; }
+})();
+</script>
+</body>
+</html>
